@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntegPRog</title>
+</head>
+<script>
+    function displayMe(text, grade1, grade2, grade3, grade4, grade5){
+            var textValue = document.getElementById('text').value;
+            var textValue2 = +document.getElementById('grade1').value;
+            var textValue3 = +document.getElementById('grade2').value;
+            var textValue4 = +document.getElementById('grade3').value;
+            var textValue5 = +document.getElementById('grade4').value;
+            var textValue6 = +document.getElementById('grade5').value;
+
+            var total = textValue2 + textValue3 + textValue4 + textValue5 +textValue6;
+            var totalAverage = total / 5;
+             
+            alert( "Name: " + textValue + "\n" + "IP1" + textValue2 + "\n" + "IMI" + textValue3 + "\n" + "OOP" + textValue4 + "\n" + "EDP" + textValue5 + "\n" + "HCI" + textValue6 + "\n" + "Average" + totalAverage);
+             
+    }
+</script>  
+<body>
+        <b>Name: </b>
+        <input type="string" id="text"><br><br>
+        <b>GRADE</b><br><br>
+        <b>IP1</b>
+        <input type="number" id="grade1"><br><br>
+        <b>IMI</b>
+        <input type="number" id="grade2"><br><br>
+        <b>OOP</b>
+        <input type="number" id="grade3"><br><br>
+        <b>EDP</b>
+        <input type="number" id="grade4"><br><br>
+        <b>HCI</b>
+        <input type="number" id="grade5"><br><br>
+        
+        <button onclick="displayMe()">COMPUTE</button>
+</body>          
+</html>
